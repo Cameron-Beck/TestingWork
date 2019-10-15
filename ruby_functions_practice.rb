@@ -39,11 +39,70 @@ def number_to_full_month_name(number)
     "Febuary"
   when 3
     "March"
+  when 4
+    "April"
+  when 5
+    "May"
+  when 6
+    "June"
+  when 7
+    "July"
+  when 8
+    "August"
   when 9
     "September"
-
+  when 10
+    "October"
+  when 11
+    "November"
+  when 12
+    "December"
   else
     "not a month"
 end
   return name_of_month
+end
+
+def number_to_short_month_name(number)
+  name_of_month = case number
+  when 1
+    "January"
+  when 2
+    "Febuary"
+  when 3
+    "March"
+  when 4
+    "April"
+  when 5
+    "May"
+  when 6
+    "June"
+  when 7
+    "July"
+  when 8
+    "August"
+  when 9
+    "September"
+  when 10
+    "October"
+  when 11
+    "November"
+  when 12
+    "December"
+  else
+    "not a month"
+end
+  return name_of_month.slice(0,3)
+end
+
+def volume_of_cube(num1, num2, num3)
+  return num1 * num2 * num3
+end
+
+def volume_of_sphere(num1, pi ,radius)
+  return num1 * pi * radius**3
+end
+
+def fahrenheit_to_celsius(num1)
+  return (num1 - 32) * 5 / 9
 end
